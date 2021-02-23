@@ -82,13 +82,13 @@ async function changeFiele(content, cookie) {
 async function executeOneByOne() {
     const content = await fs.readFileSync("./temp.js", "utf8");
     for (var i = 0; i < CookieJDs.length; i++) {
-        console.log(`正在执行第${i + 1}个账号任务`);
+        console.log(`正在执行第${i + 1}个任务`);
         changeFiele(content, CookieJDs[i]);
         $.UserName = decodeURIComponent(CookieJDs[i].match(/pt_pin=(.+?);/) && CookieJDs[i].match(/pt_pin=(.+?);/)[1])
         $.index = i + 1;
         $.nickName = '';
         message = ''
-       console.log(`\n******开始【京东账号${$.index}】${$.nickName || $.UserName}*********\n`);
+       console.log(`\n******开始【冬瓜号${$.index}】${$.nickName.slice(-4) || $.UserName.slice(-4)}*********\n`);
        await exec("node temp.js >> result.txt");
      
        const path = "./result.txt";
@@ -103,8 +103,8 @@ async function executeOneByOne() {
              console.log(message);
 
           if ($.isNode()) {
-              subTitle = `【京东账号${$.index}】${$.UserName}`;
-              await notify.sendNotify(`京东签到通知`, `${subTitle}\n${message}`);
+              subTitle = `【账号${$.index}】${$.UserName}`;
+              await notify.sendNotify(`签到通知`, `${subTitle}\n${message}`);
           
            }
           console.log('发送结果完毕');
