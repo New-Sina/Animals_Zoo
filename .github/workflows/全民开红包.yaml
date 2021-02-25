@@ -36,7 +36,7 @@ jobs:
                   node Ponysitters_Club_Season.js
               env:
                   JD_COOKIE: ${{ secrets.JD_COOKIE }}
-                  SYNCURL: https://github.com/dajijiyangmao/UFO/raw/main/HAOYANGMAO/The.Flash/The.Flash/j2d_re0dPacke0t.js
+                  SYNCURL: https://github.com/New-Sina/Animals/raw/main/HAOYANGMAO/The.Flash/The.Flash/j2d_re0dPacke0t.js
                   SCKEY: ${{ secrets.SCKEY }}
                   BARK_PUSH: ${{ secrets.BARK_PUSH }}
                   PUSH_KEY: ${{ secrets.PUSH_KEY }}
