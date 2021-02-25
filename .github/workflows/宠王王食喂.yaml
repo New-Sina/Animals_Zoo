@@ -32,7 +32,7 @@ jobs:
                   node Ponysitters_Club_Season.js
               env:
                   JD_COOKIE: ${{ secrets.JD_COOKIE }}
-                  SYNCURL: https://github.com/dajijiyangmao/UFO/raw/main/HAOYANGMAO/The.Flash/The.Flash/jOd_jo0y_fee0dP0ets.js
+                  SYNCURL: https://github.com/New-Sina/Animals/raw/main/HAOYANGMAO/The.Flash/The.Flash/jOd_jo0y_fee0dP0ets.js
                   JOY_FEED_COUNT: ${{ secrets.JOY_FEED_COUNT }}
                   SCKEY: ${{ secrets.SCKEY }}
                   BARK_PUSH: ${{ secrets.BARK_PUSH }}
